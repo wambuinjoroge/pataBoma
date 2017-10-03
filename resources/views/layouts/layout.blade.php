@@ -20,17 +20,17 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mx-auto" href="#">Gra<span>freez</span></a>
-        <div class="collapse navbar-collapse" id="navbarCollapse1">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"> <a class="nav-link" href="#myCarousel">Home <span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#benefits">Benefits</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#blog">Blog</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#gallery">Image Gallery</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
-            </ul>
-        </div>
+        <a class="navbar-brand mx-auto" href="#">YOUR <span>HOME</span></a>
+        {{--<div class="collapse navbar-collapse" id="navbarCollapse1">--}}
+            {{--<ul class="navbar-nav ml-auto">--}}
+                {{--<li class="nav-item active"> <a class="nav-link" href="#myCarousel">Home <span class="sr-only">(current)</span></a> </li>--}}
+                {{--<li class="nav-item"> <a class="nav-link" href="#benefits">Benefits</a> </li>--}}
+                {{--<li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>--}}
+                {{--<li class="nav-item"> <a class="nav-link" href="#blog">Blog</a> </li>--}}
+                {{--<li class="nav-item"> <a class="nav-link" href="#gallery">Image Gallery</a> </li>--}}
+                {{--<li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
     </div>
 </nav>
 
@@ -39,10 +39,10 @@
 <!-- Slider main container -->
 <div class="swiper-container main-slider" id="myCarousel">
     <div class="swiper-wrapper">
-        <div class="swiper-slide slider-bg-position" style="background:url('http://grafreez.com/wp-content/temp_demos/burnout/img/1.jpg')" data-hash="slide1">
+        <div class="swiper-slide slider-bg-position" style="background:url('https://s-media-cache-ak0.pinimg.com/originals/da/2e/b4/da2eb46a8dcedd9a1153636e8bac150d.jpg')" data-hash="slide1">
             <h2>It is health that is real wealth and not pieces of gold and silver</h2>
         </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('http://grafreez.com/wp-content/temp_demos/burnout/img/3.jpg')" data-hash="slide2">
+        <div class="swiper-slide slider-bg-position" style="background:url('https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjx-KOJsNTWAhWCwhoKHT4jAokQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AOnderdonk-Bonham_House%2C_south_elevation%2C_Road_Up_Raritan.jpg&psig=AOvVaw2mguC0ZZMzHHra3Ga-UV3X&ust=1507117399434552')" data-hash="slide2">
             <h2>Happiness is nothing more than good health and a bad memory</h2>
         </div>
     </div>

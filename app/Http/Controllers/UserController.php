@@ -32,7 +32,5 @@ class UserController extends Controller
         }
 
         $user = new User();
-
-
     }
 }

@@ -16,9 +16,10 @@
 //});
 
 Route::get('/', function () {
-    return view('users.create');
+    return view('home');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/create/user', 'UserController@index')->name('create/user');
