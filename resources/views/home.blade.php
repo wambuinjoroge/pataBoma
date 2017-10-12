@@ -4,7 +4,7 @@
 
 @section('content')
 
-
+<a href="{{ url('/create/user') }}">Create a user</a>
 
     {{--What next after logging in--}}
     {{--You are redirected to a landing page--}}

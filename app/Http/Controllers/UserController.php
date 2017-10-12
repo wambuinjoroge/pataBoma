@@ -10,6 +10,7 @@ class UserController extends Controller
 {
     //
     public function index(){
+
         $users = User::all();
         return view('users.index',compact('users'));
     }
@@ -22,7 +23,10 @@ class UserController extends Controller
     public function store(Request $request){
 
         $validator = Validator::make($request->all(),[
-            'name' => 'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
 
             ]);
         if ($validator->fails()){
@@ -32,5 +36,13 @@ class UserController extends Controller
         }
 
         $user = new User();
+        $user->first_name=$request->get('first_name');
+        $user->last_name=$request->get('last_name');
+        $user->email=$request->get('email');
+        $user->password=$request->get('password');
+
+        $user->save();
+
+        return redirect('/users');
     }
 }
