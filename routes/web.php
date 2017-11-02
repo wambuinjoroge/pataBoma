@@ -22,6 +22,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+//how should my homepage look like what is a homepage
 Route::get('/users', 'UserController@index');
 Route::post('create/user', 'UserController@store');
 Route::get('/create/user', 'UserController@create');

@@ -20,7 +20,8 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mx-auto" href="#">YOUR <span>HOME</span></a>
+        <a class="navbar-brand mx-auto" href="{{ url("home
+        ") }}">BETTER <span>LIVING</span></a>
 
         {{--login--}}
 

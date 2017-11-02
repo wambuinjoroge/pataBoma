@@ -1,10 +1,21 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('title', 'Create New User')
 
 @section('content')
 
-<a href="{{ url('/create/user') }}">Create a user</a>
+{{--<a href="{{ url('/create/user') }}">Create a user</a>--}}
+{{--create a home page for my web-app--}}
+
+<div class="col-md-4"></div>
+
+<div id="header" class="col-md-4"><p>Pata Home</p></div>
+
+<div class="col-md-4"></div>
+
+
+
+
 
     {{--What next after logging in--}}
     {{--You are redirected to a landing page--}}

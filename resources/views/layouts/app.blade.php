@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom1.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -32,7 +33,7 @@
                     {{--<a class="navbar-brand" href="{{ url('/') }}">--}}
                         {{--{{ config('app.name', 'PataBoma') }}--}}
                     {{--</a>--}}
-                    <a class="navbar-brand mx-auto" href="#">PATA <span>HOME</span></a>
+                    <a class="navbar-brand mx-auto" href="{{ url('/') }}">PATA <span>HOME</span></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
