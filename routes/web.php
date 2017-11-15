@@ -16,7 +16,7 @@
 //});
 
 Route::get('/', function () {
-    return view('home');
+    return view('landing.index');
 });
 
 Auth::routes();
