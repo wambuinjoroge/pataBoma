@@ -1,9 +1,16 @@
 
 #header {
-    font-size: 650%;
-    margin: 20px;
-    width: 60%;
+    font-size: 400%;
+    margin: auto;
+    width: 30%;
     border: 3px;
+    padding: 20px;
+}
+#subheader {
+    font-size: 150%;
+    margin: auto;
+    width: 30%;
+    border: 2px;
     padding: 20px;
 }
 

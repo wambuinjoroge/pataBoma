@@ -8,10 +8,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Pata Home</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom1.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -29,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                       Pata Home
                     </a>
                 </div>
 
@@ -52,6 +53,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
