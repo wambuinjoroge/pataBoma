@@ -27,3 +27,11 @@ Route::get('/users', 'UserController@index');
 Route::post('create/user', 'UserController@store');
 Route::get('/create/user', 'UserController@create');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
