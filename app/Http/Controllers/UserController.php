@@ -12,11 +12,11 @@ class UserController extends Controller
     public function index(){
 
         $users = User::all();
-        return view('users.index',compact('users'));
+        return view('centaur.users.index',compact('users'));
     }
 
     public function create(){
-        return view ('users.create');
+        return view ('centaur.users.create');
     }
 
     //create  a user along with his/role

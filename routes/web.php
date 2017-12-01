@@ -24,10 +24,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 //how should my homepage look like what is a homepage
+
+//users
 Route::get('/users', 'UserController@index');
 Route::post('create/user', 'UserController@store');
 Route::get('/create/user', 'UserController@create');
 
+//roles
+Route::get('/roles', 'RoleController@index');
+Route::post('create/role', 'RoleController@store');
+Route::get('/create/role', 'RoleController@create');
 
 Auth::routes();
 
