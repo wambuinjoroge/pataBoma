@@ -11,7 +11,7 @@
             <tr>
                 <th>Slug</th>
                 <th>Name</th>
-                <th>Permissions/th>
+                <th>Permissions<th>
             </tr>
             </thead>
             <tbody>
