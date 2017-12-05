@@ -59,6 +59,10 @@
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"  >
+
+                                            <div>
+                                                <a href="{{url('users')}}">Users</a>
+                                            </div>
                                             <p>Logout</p>
                                         </a>
 

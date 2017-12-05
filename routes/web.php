@@ -19,8 +19,11 @@ Route::get('/', function () {
     return view('landing.index');
 });
 
-
 Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
 
 Route::get('/home', 'HomeController@index');
 //how should my homepage look like what is a homepage
@@ -35,10 +38,7 @@ Route::get('/roles', 'RoleController@index');
 Route::post('create/role', 'RoleController@store');
 Route::get('/create/role', 'RoleController@create');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+//houses
+Route::get('/houses', 'HouseController@index');
+Route::post('create/house', 'HouseController@store');
+Route::get('/create/house', 'HouseController@create');

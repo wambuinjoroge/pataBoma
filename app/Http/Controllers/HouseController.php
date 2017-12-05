@@ -4,12 +4,18 @@ namespace App\Http\Controllers;
 
 use App\House;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class HouseController extends Controller
 {
     //
+    public function index(){
+
+        $houses = House::all();
+        return view('houses.index',compact('houses'));
+    }
     public function create(){
-        return view ('house.create');
+        return view ('houses.create');
     }
 
     //create  a user along with his/role

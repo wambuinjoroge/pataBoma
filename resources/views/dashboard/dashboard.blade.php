@@ -81,9 +81,7 @@
         </a>
         <div class="desc">House 1</div>
     </div>
-    <div>
-        <a href="{{url('users')}}">Users</a>
-    </div>
+
 
     {{--<div class="gallery">--}}
         {{--<a target="_blank" href="forest.jpg">--}}

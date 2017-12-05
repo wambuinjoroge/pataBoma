@@ -14,7 +14,7 @@ class AddHouseNumberToHousesTable extends Migration
     public function up()
     {
         Schema::table('houses', function (Blueprint $table) {
-            $table->integer('house_number');
+            $table->text('house_number');
         });
     }
 
