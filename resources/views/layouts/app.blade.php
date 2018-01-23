@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom1.css') }}" rel="stylesheet">
+    {{--<link href="{{ asset('css/full.css') }}" rel="stylesheet">--}}
 </head>
 <body>
     <div id="app">
@@ -29,7 +30,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/home') }}">
                        Pata Home
                     </a>
                 </div>
