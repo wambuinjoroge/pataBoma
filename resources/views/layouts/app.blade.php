@@ -30,7 +30,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/home') }}">
+                    <a class="navbar-brand" href="{{ url('/homes') }}">
                        Pata Home
                     </a>
                 </div>
@@ -60,11 +60,11 @@
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"  >
-
-                                            <div>
+                                            Logout
+                                            {{--<div>--}}
                                                 <a href="{{url('users')}}">Users</a>
-                                            </div>
-                                            <p>Logout</p>
+                                            {{--</div>--}}
+
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
