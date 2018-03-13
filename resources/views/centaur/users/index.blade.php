@@ -5,7 +5,9 @@
 @section('content')
 
     {{--table--}}
+
     <div class="container">
+        <div class="pull-right"><a href={{ url("create/user") }}><button>Create User</button></a></div>
         <table class="table ">
             <thead>
                 <tr>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\RoleUser;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -42,6 +43,8 @@ class UserController extends Controller
         $user->password=$request->get('password');
 
         $user->save();
+
+        $user_id = RoleUser::select(['']);//still trying to figure this out,come back from your many biz and we'll have found a way out.
 
         return redirect('/users');
     }

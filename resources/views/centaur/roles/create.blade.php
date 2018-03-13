@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Create New User')
+@section('title', 'Create New Role')
 
 @section('content')
 
 <div class="col-md-4"></div>
 <div class="container col-md-4">
 
-    <h2>Create Role</h2>
+    <h2>Create New Role</h2>
     <form method="post" action="{{url('create/role')}}">
 
         <input type="hidden" name="_token" value="{{ csrf_token() }}">

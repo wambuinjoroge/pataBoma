@@ -1,32 +1,14 @@
-{{--@extends('layouts.app')--}}
+@extends('layouts.app')
 
-{{--@section('title', 'Create New User')--}}
+@section('title', 'Create New User')
 
-{{--@section('content')--}}
+@section('content')
 
 
-    {{--create form--}}
-
-        <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{--<!-- CSRF Token -->--}}
-    {{--<meta name="csrf-token" content="{{ csrf_token() }}">--}}
-
-    <title>{{ config('app.name', 'PataBoma') }}</title>
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
     <div class="col-md-4"></div>
     <div class="container col-md-4">
 
-        <h2>Create User</h2>
+        <h2>Create New User</h2>
         <form method="post" action="{{url('create/user')}}">
 
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -56,5 +38,5 @@
 
         </form>
     </div>
-</body>
-    {{--@stop--}}
+
+@stop
