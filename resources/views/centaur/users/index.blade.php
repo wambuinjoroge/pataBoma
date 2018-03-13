@@ -14,6 +14,7 @@
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +24,7 @@
                         <td>{{ $user->first_name }}</td>
                         <td>{{ $user->last_name }}</td>
                         <td>{{ $user->email }}</td>
+                        <td><a href={{ url("create/role/" . $user->id) }}><button>Add Role</button></a></td>
                     </tr>
 
                     @endforeach

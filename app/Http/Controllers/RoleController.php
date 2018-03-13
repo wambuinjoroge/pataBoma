@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Role;
+use App\RoleUser;
+use App\User;
+use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
 class RoleController extends Controller
@@ -16,11 +21,13 @@ class RoleController extends Controller
     }
 
     public function create(){
-        return view ('centaur.roles.create');
+        $user = Auth::user();
+//        print_r($user->id);exit;
+        return view ('centaur.roles.create',compact('user'));
     }
 
-    //create  a user along with his/role
-    public function store(Request $request){
+
+    public function store(Request $request, $id){
 
         $validator = Validator::make($request->all(),[
             'slug' => 'required',
@@ -34,13 +41,26 @@ class RoleController extends Controller
                 ->withInput();
         }
 
+        //trying to add role to current user
+        $user_id = User::find($id);
+//        print_r($user_id);exit;
+
+
         $role = new Role();
         $role->slug=$request->get('slug');
         $role->name=$request->get('name');
         $role->permissions=$request->get('permissions');
 
+        $data = DB::table('users')->join('roles','users.id','=','roles.user_id')
+            ->select('roles.id','users.id')
+            ->where('users.id',$user_id)->get();
+        print_r($data);exit;
+
+        $role = RoleUser::insert([$data]);
+//        use of update and insert in db
         $role->save();
 
         return redirect('/roles');
     }
+//    update and delete
 }

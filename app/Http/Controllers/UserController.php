@@ -21,7 +21,13 @@ class UserController extends Controller
     }
 
     //create  a user along with his/role
+     public function role_user($user_id){
+
+     }
+
+
     public function store(Request $request){
+
 
         $validator = Validator::make($request->all(),[
             'first_name' => 'required',
@@ -42,10 +48,11 @@ class UserController extends Controller
         $user->email=$request->get('email');
         $user->password=$request->get('password');
 
+
         $user->save();
 
-        $user_id = RoleUser::select(['']);//still trying to figure this out,come back from your many biz and we'll have found a way out.
 
         return redirect('/users');
     }
+//    update and delete
 }

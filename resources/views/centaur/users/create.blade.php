@@ -14,19 +14,19 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
                 <label>First Name</label>
-                <input type="text" class="form-control" name="first_name"  placeholder="first_name" value="{{ old('first_name') }}">
+                <input type="text" class="form-control" name="first_name"  placeholder="first_name" >
             </div>
             <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" class="form-control" name="last_name" placeholder="last_name" value="{{ old('last_name') }}">
+                <input type="text" class="form-control" name="last_name" placeholder="last_name" >
             </div>
             <div class="form-group">
                 <label>Email</label>
-                <input type="email"  class="form-control" name="email" placeholder="email" value="{{ old('email') }}">
+                <input type="email"  class="form-control" name="email" placeholder="email" >
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" class="form-control" name="password" placeholder="password" value="{{ old('password') }}">
+                <input type="password" class="form-control" name="password" placeholder="password" >
             </div>
             {{--write code that persuades user to enter password a second time--}}
             <div class="form-group">

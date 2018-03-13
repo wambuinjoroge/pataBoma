@@ -35,8 +35,8 @@ Route::get('/create/user', 'UserController@create');
 
 //roles
 Route::get('/roles', 'RoleController@index');
-Route::post('create/role', 'RoleController@store');
-Route::get('/create/role', 'RoleController@create');
+Route::post('create/role/{id}', 'RoleController@store');
+Route::get('/create/role/{id}', 'RoleController@create');
 
 //houses
 Route::get('/houses', 'HouseController@index');

@@ -8,7 +8,7 @@
 <div class="container col-md-4">
 
     <h2>Create New Role</h2>
-    <form method="post" action="{{url('create/role')}}">
+    <form method="post" action="{{url('create/role/' . $user->id)}}">
 
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">

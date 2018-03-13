@@ -6,6 +6,7 @@
 
     {{--table--}}
     <div class="container">
+        {{--<div class="pull-right"><a href={{ url("create/role") }}><button>Create Role</button></a></div>--}}
         <table class="table ">
             <thead>
             <tr>
