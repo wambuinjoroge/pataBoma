@@ -28,6 +28,15 @@ class RoleController extends Controller
 
 
     public function store(Request $request, $id){
+        //trying to add role to current user
+        $user = User::find($id);
+        $user_id = $user->id;
+//      print_r($user_id->id);exit;
+//      print_r($request->all());
+//      exit;
+//      We want to get the id of the user in question(whose role we are adding) instead of the the one logged in,
+//      so here comes the twist, are you going to be changing the one who is logged in or the one in question??
+//      who is logged in or what????
 
         $validator = Validator::make($request->all(),[
             'slug' => 'required',
@@ -41,24 +50,21 @@ class RoleController extends Controller
                 ->withInput();
         }
 
-        //trying to add role to current user
-        $user_id = User::find($id);
-//        print_r($user_id);exit;
-
-
         $role = new Role();
         $role->slug=$request->get('slug');
         $role->name=$request->get('name');
         $role->permissions=$request->get('permissions');
 
-        $data = DB::table('users')->join('roles','users.id','=','roles.user_id')
-            ->select('roles.id','users.id')
-            ->where('users.id',$user_id)->get();
-        print_r($data);exit;
-
-        $role = RoleUser::insert([$data]);
-//        use of update and insert in db
         $role->save();
+
+        $role_id = $role->id;
+//        print_r($role_id);exit();
+//      So, we now have the two ids. How do we post them to the role_user table
+        $role_user = new RoleUser();
+        $role_user->role_id = $role_id;
+        $role_user->user_id = $user_id;
+//        print_r($role_user);exit;
+        $role_user->save();
 
         return redirect('/roles');
     }

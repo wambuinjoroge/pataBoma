@@ -9,11 +9,14 @@ use Illuminate\Support\Facades\Validator;
 class HouseController extends Controller
 {
     //
-    public function index(){
+//    public function index(){
+//
+//        $houses = House::all();
+//        return view('houses.index',compact('houses'));
+//    }
 
-        $houses = House::all();
-        return view('houses.index',compact('houses'));
-    }
+
+
     public function create(){
         return view ('houses.create');
     }
@@ -39,5 +42,10 @@ class HouseController extends Controller
         $house->save();
 
         return redirect('/houses');
+    }
+
+
+    public function show(){
+        
     }
 }
