@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
+<div class="container">
 <form method="post" action="{{url('create/house')}}">
 
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -15,5 +16,5 @@
     </div>
 
 </form>
-
+</div>
 @stop

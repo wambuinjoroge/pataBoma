@@ -9,12 +9,12 @@ use Illuminate\Support\Facades\Validator;
 class HouseController extends Controller
 {
     //
-//    public function index(){
-//
-//        $houses = House::all();
-//        return view('houses.index',compact('houses'));
-//    }
+    public function index(){
 
+        $houses = House::all();
+        return json_encode($houses);
+//        return view('houses.index',compact('houses'));
+    }
 
 
     public function create(){
