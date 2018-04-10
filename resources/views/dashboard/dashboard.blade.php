@@ -10,7 +10,7 @@
 
 <!-- body -->
 <div class="col-md-12">
-    <div class="col-md-4">
+    <div class="col-md-4" id="houseOne">
         <a target="_blank" href="assets/images/house2.jpeg">
             <img src="assets/images/house.jpeg">
         </a>
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div> 
-    <div class="col-md-4">
+    <div class="col-md-4" id="houseTwo">
         <a target="_blank" href="assets/images/house2.jpeg">
             <img src="assets/images/house2.jpeg">
         </a>
@@ -33,7 +33,7 @@
              <button><a href="#">View More</a></button>
         </div>
     </div> 
-    <div class="col-md-4">
+    <div class="col-md-4" id="houseThree">
         <a target="_blank" href="assets/images/house2.jpeg">
             <img src="assets/images/house4.jpeg">
         </a>
@@ -43,4 +43,14 @@
              <button><a href="#">View More</a></button>
         </div>
 </div>
+</div>
+    <script type="text/javascript">
+
+        var xhttp = new XMLHttpRequest();
+
+        function loadDoc() {
+            document.getElementById('houseOne');
+        }
+
+    </script>
 @stop

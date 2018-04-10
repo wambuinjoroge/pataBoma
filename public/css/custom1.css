@@ -6,16 +6,20 @@
 #header {
     font-size: 450%;
     margin: auto;
-    width: 30%;
-    border: 3px; 
-    padding: 20px;
+    width: 40%;
+    border: 2px;
+    padding: auto;
+    position: relative;
+    top: 100px; left: 100px;  bottom: 100px; right: 100px;
 }
 #subheader {
     font-size: 150%;
     margin: auto;
-    width: 30%;
+    width: 40%;
     border: 2px;
-    padding: 10px;
+    padding: auto;
+    position: relative;
+    top: 100px; left: 100px;  bottom: 100px; right: 100px;
 }
 
 

@@ -2,12 +2,13 @@
 
 @section('content')
 
-<div>
+<div class="row col-md-12">
   
     <h1 id="header">Pata Home</h1>
 
     <h3 id="subheader">Providing you with a home for life</h3>
-	<img src="assets/images/housesproject.jpg" id="background">
+
+	{{--<img src="assets/images/housesproject.jpg" id="background">--}}
 
 </div>
     

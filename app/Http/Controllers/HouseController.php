@@ -12,8 +12,9 @@ class HouseController extends Controller
     public function index(){
 
         $houses = House::all();
-        return json_encode($houses);
-//        return view('houses.index',compact('houses'));
+//        Yeaaaay!!!
+//        return json_encode($houses);
+        return view('houses.index',compact('houses'));
     }
 
 
@@ -41,11 +42,12 @@ class HouseController extends Controller
 
         $house->save();
 
-        return redirect('/houses');
+        return redirect()->back();
     }
 
 
-    public function show(){
-        
+    public function show($id){
+       $house = House::where('id',$id)->first();
+       return view('houses.show',compact('house'));
     }
 }
