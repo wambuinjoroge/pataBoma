@@ -2,15 +2,13 @@
 
 @section('content')
 
-<div class="row col-md-12">
-  
+<div class="row col-md-12 col-lg-12 col-xs-12 col-sm-12" id="background">
+
+    {{--<img src="assets/images/image.jpg" alt="The house to live!" class="">--}}
     <h1 id="header">Pata Home</h1>
 
     <h3 id="subheader">Providing you with a home for life</h3>
 
-	{{--<img src="assets/images/housesproject.jpg" id="background">--}}
-
 </div>
     
 @stop
- <!-- background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9EAKqZ0ZwRQMtAzxjCKdW2uJAHAgNKROlMDuP8_HNXP9njnA0') no-repeat center center fixed; -->

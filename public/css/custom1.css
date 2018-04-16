@@ -1,7 +1,27 @@
 
-#background{
-    margin:auto;
 
+#background{
+    /* The image used */
+    /*background-image: url('assets/images/image.jpg');*/
+
+    /*back-ground:position:fixed;*/
+    /* Full height */
+    /*height: 100%;*/
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+
+    padding: auto;
+    margin: auto;
+
+}
+
+.container{
+    position: relative;
+
+    color: white;
 }
 #header {
     font-size: 450%;
@@ -21,5 +41,11 @@
     position: relative;
     top: 100px; left: 100px;  bottom: 100px; right: 100px;
 }
+
+/*#image {*/
+    /*position: relative;*/
+    /*top: 120px; left: 530px;  bottom: 200px; right: 300px;*/
+    /*!*width: 15%;*!*/
+/*}*/
 
 
