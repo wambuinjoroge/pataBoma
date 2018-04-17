@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('landing.index');
 });
 
+Route::get('/modal', function () {
+    return view('layouts.image');
+});
+
 Auth::routes();
 
 Route::get('/homes', 'HomeController@index')->name('home');
