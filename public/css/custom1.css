@@ -2,16 +2,16 @@
 
 #background{
     /* The image used */
-    /*background-image: url('assets/images/image.jpg');*/
+    /*background-image: url();*/
 
-    /*back-ground:position:fixed;*/
-    /* Full height */
-    /*height: 100%;*/
+    /*background-position:fixed;*/
+     /*Full height*/
+    height: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    /*background-size: cover;*/
+    background-size: cover;
 
     padding: auto;
     margin: auto;
