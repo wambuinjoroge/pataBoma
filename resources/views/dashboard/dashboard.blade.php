@@ -5,8 +5,8 @@
 
 <!-- head section -->
 
-<h2>Get your dream home now!</h2>
-<br>
+{{--<h2>Get your dream home now!</h2>--}}
+{{--<br>--}}
 
 <!-- body -->
 <div class="col-md-12">

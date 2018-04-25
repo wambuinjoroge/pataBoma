@@ -12,7 +12,7 @@
 
     <div class="form-group">
         {{--<label>Submit</label>--}}
-        <input type="submit" value="submit" placeholder="submit">
+        <button type="submit">Submit</button>
     </div>
 
 </form>

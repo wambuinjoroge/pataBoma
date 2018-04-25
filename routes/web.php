@@ -46,3 +46,4 @@ Route::get('/create/role/{id}', 'RoleController@create');
 Route::get('/houses', 'HouseController@index');
 Route::post('create/house', 'HouseController@store');
 Route::get('/create/house', 'HouseController@create');
+Route::get('/house/{id}', 'HouseController@show');

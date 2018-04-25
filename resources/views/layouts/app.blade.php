@@ -11,6 +11,7 @@
     <title>Pata Home</title>
 
     <!-- Styles -->
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom1.css') }}" rel="stylesheet">
     {{--<link href="{{ asset('css/full.css') }}" rel="stylesheet">--}}
