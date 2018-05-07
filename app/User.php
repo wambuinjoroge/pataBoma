@@ -35,4 +35,9 @@ class User extends Authenticatable
     public function roles(){
         return $this->belongsToMany('App\Roles');
     }
+
+    public function houses()
+    {
+        return $this->hasMany('App\House');
+    }
 }

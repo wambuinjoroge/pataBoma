@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\RoleUser;
 use App\User;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -14,6 +15,25 @@ class UserController extends Controller
 
         $users = User::all();
         return view('centaur.users.index',compact('users'));
+    }
+    public function getUser(){
+
+        $client = new Client();
+        $token="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNkNzBkNjcwN2MwNTY0NmJiMGVmZGI4YTEyNTQzMjVmOTA2ZWYwODRkMjdiZmZkMmFjODA4ZDU4MmNmNTFkZjUxZDIxM2UxNjNiNTlkNTQ2In0";
+        $url="localhost:7000/api/user";
+
+        //echo $token;exit;
+
+
+        $res = $client->request('GET', $url, [
+            'headers' => [
+                'Accept' => 'application/json',
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Bearer ' . $token
+            ]
+        ]);
+
+        print_r($res->getBody()->getContents());
     }
 
     public function create(){

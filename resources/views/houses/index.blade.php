@@ -20,6 +20,8 @@
                     <th>{{ $house->house_number }}</th>
                     <th>
                         <a href="{{ url('/house/'.$house->id) }}">Show</a>
+                        <a href="{{ url('edit/house/'.$house->id) }}">Edit</a>
+                        <a href="{{ url('/house/delete/'.$house->id) }}">Delete</a>
                     </th>
                 </tr>
             @endforeach

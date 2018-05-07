@@ -13,6 +13,31 @@ use Illuminate\Http\Request;
 |
 */
 
+
+
+Route::get('/login','ApiController@accessToken');
+
+Route::group(['middleware' => ['web','auth:api']], function()
+
+{
+
+       Route::post('/house','ApiController@store');
+
+       Route::get('/houses','ApiController@index');
+
+       Route::get('/house/{id}','ApiController@show');
+
+       Route::put('/house/{id}','ApiController@update');
+
+       Route::delete('/house/{id}','ApiController@destroy');
+
+});
+
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+
