@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom1.css') }}" rel="stylesheet">
+
     {{--<link href="{{ asset('css/full.css') }}" rel="stylesheet">--}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -51,6 +51,7 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->first_name }} <span class="caret"></span>
@@ -80,6 +81,7 @@
             </div>
         </nav>
 
+        @stack('styles')
         @yield('content')
     </div>
 

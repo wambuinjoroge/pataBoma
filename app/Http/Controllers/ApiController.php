@@ -85,44 +85,46 @@ class ApiController extends Controller
 
     public function index(Request $request){
 
-        return $this->prepareResult(true,$request->user()->houses()->get(),[],"All houses");
+        $houses=House::all();
+
+        return $this->prepareResult(true,$houses,[],"All houses");
 
     }
 
-    public function show(Request $request, $id){
+    public function show($id){
 
         $house = House::findOrFail($id);
 
-        if ($id == $request->user()->id){
+//        if ($id == $request->user()->id){
 
-            return $this->prepareResult(true,$house,[],"House fetched");
+        return $this->prepareResult(true,$house,[],"House fetched");
 
-        }else{
-
-            return $this->prepareResult(false,[],"unauthorized","You are not authenticated to view this house");
-
-        }
+//        }else{
+//
+//            return $this->prepareResult(false,[],"unauthorized","You are not authenticated to view this house");
+//
+//        }
 
     }
 
     public function store(Request $request){
 
-        $error = $this->validations($request,"create house");
-
-        if ($error['error']) {
-
-            return $this->prepareResult(false, [], $error['errors'],"Error in creating house");
-
-        } else {
+//        $error = $this->validations($request,"create house");
+//
+//        if ($error['error']) {
+//
+//            return $this->prepareResult(false, [], $error['errors'],"Error in creating house");
+//
+//        } else {
 
             $house = new House();
             $house->house_number=$request->get('house_number');
 
             $house->save();
 
-            return $this->prepareResult(true, $house, $error['errors'],"House created");
+            return $this->prepareResult(true, $house, [],"House created");
 
-        }
+//        }
     }
     public function update(Request $request,$id){
 

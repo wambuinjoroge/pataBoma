@@ -15,14 +15,14 @@
 //    return view('welcome');
 //});
 
-//Route::get('/', function () {
-//    return view('landing.index');
-//});
-
-
 Route::get('/', function () {
-    return redirect('/login');
+    return view('landing.index');
 });
+
+
+//Route::get('/', function () {
+//    return redirect('/login');
+//});
 
 
 Route::get('/modal', function () {

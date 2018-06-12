@@ -17,11 +17,11 @@ class HouseController extends Controller
     //
     public function index(){
 
-        $result = Auth::user()->houses()->get();
+//        $result = Auth::user()->houses()->get();
 
         $houses = House::all();
 
-        return view('houses.index',compact('houses','result'));
+        return view('houses.index',compact('houses'));
 
     }
 

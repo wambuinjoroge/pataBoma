@@ -1,15 +1,3 @@
-{{--<!DOCTYPE html>--}}
-{{--<html>--}}
-{{--<head>--}}
-    {{--<title>PB</title>--}}
-    {{--<link rel="stylesheet" href="{{ asset('css/image.css') }}">--}}
-{{--<body>--}}
-{{--<div class="body">--}}
-    {{--<p>why you not working!!</p>--}}
-{{--</div>--}}
-{{--</body>--}}
-{{--</html>--}}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

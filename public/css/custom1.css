@@ -1,21 +1,26 @@
 
 
 #background{
-    /* The image used */
-    /*background-image: url();*/
-
     /*background-position:fixed;*/
-     /*Full height*/
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     padding: auto;
     margin: auto;
 
+}
+
+.image {
+    /* The image used */
+    /*background-image: url('');*/
+    position: fixed;
+
+    /*Full height*/
+    height: auto;
+    /*!* Center and scale the image nicely *!*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*top: 120px; left: 530px;  bottom: 200px; right: 300px;*/
+    /*width: 15%;*/
 }
 
 .container{
@@ -31,6 +36,7 @@
     padding: auto;
     position: relative;
     top: 100px; left: 100px;  bottom: 100px; right: 100px;
+
 }
 #subheader {
     font-size: 150%;
@@ -40,12 +46,9 @@
     padding: auto;
     position: relative;
     top: 100px; left: 100px;  bottom: 100px; right: 100px;
+    /*color: #f9f9f9;*/
 }
 
-/*#image {*/
-    /*position: relative;*/
-    /*top: 120px; left: 530px;  bottom: 200px; right: 300px;*/
-    /*!*width: 15%;*!*/
-/*}*/
+
 
 
