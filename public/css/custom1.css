@@ -1,52 +1,47 @@
 
 
-#background{
-    /*background-position:fixed;*/
+/*#background{*/
+    /*!*background-position:fixed;*!*/
 
-    padding: auto;
-    margin: auto;
+    /*padding: auto;*/
+    /*margin: auto;*/
 
-}
+/*}*/
 
 .image {
     /* The image used */
-    /*background-image: url('');*/
-    position: fixed;
-
-    /*Full height*/
-    height: auto;
-    /*!* Center and scale the image nicely *!*/
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 550px;
+    /*background: url('http://myfreephotos.net/wp-content/uploads/2015/04/africa-village-smiling-african-children.jpg') no-repeat center;*/
+    background-image: url('http://myfreephotos.net/wp-content/uploads/2015/04/africa-village-smiling-african-children.jpg');
     background-size: cover;
-    /*top: 120px; left: 530px;  bottom: 200px; right: 300px;*/
-    /*width: 15%;*/
+    text-align: center;
 }
 
-.container{
-    position: relative;
+/*.container{*/
+    /*position: relative;*/
 
-    color: white;
-}
-#header {
+    /*color: white;*/
+/*}*/
+.image #header {
     font-size: 450%;
-    margin: auto;
-    width: 40%;
-    border: 2px;
-    padding: auto;
-    position: relative;
+    /*margin: auto;*/
+    /*width: 40%;*/
+    /*border: 2px;*/
+    padding-top: 100px;
+    /*position: relative;*/
     top: 100px; left: 100px;  bottom: 100px; right: 100px;
+    color: #0297ff;
 
 }
-#subheader {
+.image #subheader {
     font-size: 150%;
-    margin: auto;
-    width: 40%;
-    border: 2px;
-    padding: auto;
-    position: relative;
+    /*margin: auto;*/
+    /*width: 40%;*/
+    /*border: 2px;*/
+    padding-bottom: 40px;
+    /*position: relative;*/
     top: 100px; left: 100px;  bottom: 100px; right: 100px;
-    /*color: #f9f9f9;*/
+    color: #0297ff;
 }
 
 
